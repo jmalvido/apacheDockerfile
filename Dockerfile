@@ -11,7 +11,7 @@ VOLUME /data
 #Tenemos una carpeta con los archivos html en el mismo lugar que el dockerfile
 #El . se refiere a /var/www/html (Lo he definido en WORKDIR)
 
-COPY ./volumendatos/* .
+COPY ./index.html .
 #RUN service apache2 start
 CMD ["apachectl", "-D", "FOREGROUND"]
 
